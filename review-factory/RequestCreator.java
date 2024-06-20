@@ -7,15 +7,9 @@
  *
  * @author Asus
  */
-public interface ContractBuilder {
+public interface RequestCreator {
 
-    public void builContractID();
+    public RequestProduct createRequestProduct();
 
-    public void builPropertyID();
-
-    public void buildTenantID();
-
-    public void buildRentAmount();
-
-    public Contract signContract();
+    public void processRequest();
 }
