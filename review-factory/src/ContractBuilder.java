@@ -9,13 +9,14 @@
  */
 public interface ContractBuilder {
 
-    public void builContractID();
+    public ContractBuilder BuildContractID(String id);
 
-    public void builPropertyID();
+    public ContractBuilder BuildPropertyID(String id);
 
-    public void buildTenantID();
+    public ContractBuilder BuildTenantID(String id);
 
-    public void buildRentAmount();
+    public ContractBuilder BuildRentAmount(int id);
 
-    public Contract signContract();
+    public Contract SignContract();
+
 }

@@ -7,9 +7,8 @@
  *
  * @author Asus
  */
-public interface RequestCreator {
-
-    public RequestProduct createRequestProduct();
-
-    public void processRequest();
+public interface DocumentBuilder {
+    public DocumentBuilder SetExtension(String extension);
+    public DocumentBuilder SetEncryption(String encryptionType);
+    public Document BuildDoc();
 }
